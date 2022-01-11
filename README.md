@@ -16,3 +16,5 @@ Cheat-sheet of mongodb shell commands and more.
 ## Basic commands (alphabetical order)
 ### show dbs
   List all databases. (Need to be previously connected to a cluster).
+### use
+  Navigate to the specified database as a second parameter. Example: "use mydbname".
