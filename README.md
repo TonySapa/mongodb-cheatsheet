@@ -29,3 +29,27 @@ Cheat-sheet of mongodb shell commands and more.
 ## Basic query methods
   ### sort()
   Sort the result of the query
+
+## Comparison operators
+  ### $eq
+    EQual to
+  ### $ne
+    Not Equal to
+  ### $gt
+    Greater Than
+  ### $lt
+    Less Than
+  ### $gte
+    Greater Than or Equal to
+  ### $lte
+    Less Than or Equal to
+
+## Logic operators
+  ### $and
+    Match all of the specified query clauses.
+  ### $or
+    At least one of the query clauses is matched.
+  ### $nor
+    Fail to match both given clauses.
+  ### $not
+    Negates the query requirement. 
