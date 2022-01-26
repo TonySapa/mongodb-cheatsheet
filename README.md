@@ -31,25 +31,29 @@ Cheat-sheet of mongodb shell commands and more.
   Sort the result of the query
 
 ## Comparison operators
-  ### $eq
-    EQual to
-  ### $ne
-    Not Equal to
-  ### $gt
-    Greater Than
-  ### $lt
-    Less Than
-  ### $gte
-    Greater Than or Equal to
-  ### $lte
-    Less Than or Equal to
+### $eq
+  EQual to
+### $ne
+  Not Equal to
+### $gt
+  Greater Than
+### $lt
+  Less Than
+### $gte
+  Greater Than or Equal to
+### $lte
+  Less Than or Equal to
 
 ## Logic operators
-  ### $and
-    Match all of the specified query clauses.
-  ### $or
-    At least one of the query clauses is matched.
-  ### $nor
-    Fail to match both given clauses.
-  ### $not
-    Negates the query requirement. 
+### $and
+  Match all of the specified query clauses.
+### $or
+  At least one of the query clauses is matched.
+### $nor
+  Fail to match both given clauses.
+### $not
+  Negates the query requirement.
+  
+## Expressive operator
+  Find all documents where the trip started and ended at the same station:
+    ```db.trips.find({ "$expr": { "$eq": [ "$end station id", "$start station id"] } })```
